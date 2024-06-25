@@ -36,7 +36,8 @@ Filtering Options
 -mr: Regex pattern
 -ms: Response size
 -mw: Number of words in the response
-Examples
+
+Examples:
 
 To get responses with status codes 200 and 302, use:
 Command : ffuf -w wordlist.txt -u http://website.com/FUZZ -e .aspx,.html -mc 200,302
@@ -57,7 +58,7 @@ In this example, We are fuzzing the directories of geeksforgeeks.org target doma
 
 Example for a maximum fuzzing time of 60 seconds:
 
-Command : ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://geeksforgeeks.org/FUZZ -maxtime 60
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://geeksforgeeks.org/FUZZ -maxtime 60
 
 ![image](https://github.com/ChandrikaPadarthi/cookbook-on-ffuf/assets/107339345/ab850c5e-c2d9-43ef-a1a4-a810d339701d)
 
