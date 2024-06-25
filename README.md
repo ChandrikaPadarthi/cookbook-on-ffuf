@@ -47,6 +47,13 @@ URL parameters ending with FUZZ support recursion. The -recursion flag activates
 -maxtime: Sets a maximum time in seconds for the fuzzing process
 -maxtime-job: Used with -recursion to set a maximum time for each new job created per directory found
 
+Example:
+
+Command: ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://geeksforgeeks.org/FUZZ
+
+In this example, We are fuzzing the directories of geeksforgeeks.org target domain.
+
+![image](https://github.com/ChandrikaPadarthi/cookbook-on-fuff/assets/107339345/397a8759-1f45-4af0-a89a-ef0c45451830)
 
 Example for a maximum fuzzing time of 60 seconds:
 
@@ -55,11 +62,5 @@ Command : ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -
 ![image](https://github.com/ChandrikaPadarthi/cookbook-on-ffuf/assets/107339345/ab850c5e-c2d9-43ef-a1a4-a810d339701d)
 
 
-Example:
 
-Command: ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://geeksforgeeks.org/FUZZ
-
-In this example, We are fuzzing the directories of geeksforgeeks.org target domain.
-
-![image](https://github.com/ChandrikaPadarthi/cookbook-on-fuff/assets/107339345/397a8759-1f45-4af0-a89a-ef0c45451830)
 
