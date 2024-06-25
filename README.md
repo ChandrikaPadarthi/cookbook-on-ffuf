@@ -49,7 +49,11 @@ URL parameters ending with FUZZ support recursion. The -recursion flag activates
 
 
 Example for a maximum fuzzing time of 60 seconds:
-Command : ffuf -w wordlist.txt -u http://website.com/FUZZ -maxtime 60
+
+Command : ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u https://geeksforgeeks.org/FUZZ -maxtime 60
+
+![image](https://github.com/ChandrikaPadarthi/cookbook-on-ffuf/assets/107339345/ab850c5e-c2d9-43ef-a1a4-a810d339701d)
+
 
 Example:
 
