@@ -2,18 +2,20 @@
 Ffuf tool A high-speed web fuzzer developed in Go.FFUF is one of the newest and fastest open-source fuzzing tools available. But before we dive in, let's understand what fuzzing is.
 
 Fuzzing is the process of automatically providing random input to an application to find errors or unexpected behavior. It can also involve discovering hidden directories and files on a web server.
+FFUF is the automated tool developed in the Golang language which is the fastest fuzzer tool in today’s date. It has various key features of manipulation the method from GET to POST and vice versa. We can use various wordlists for fuzzing the vhost as well. FFUF tool is an open-source and free-to-use tool.
 
-How to install fuff in kali linux:
+1)How to install fuff in kali linux:
 
 Commmand: sudo apt-get install fuff
 
 ![1](https://github.com/ChandrikaPadarthi/cookbook-on-fuff/assets/107339345/6c65a3ba-b012-4205-b677-239018c5d3ed)
 
-Usage with the command ffuf -h. We can find the help page we can explore the tool with this command
+2)Usage with the command ffuf -h.
+We can find the help page we can explore the tool with this command
 
 ![2](https://github.com/ChandrikaPadarthi/cookbook-on-fuff/assets/107339345/2b3624e4-757c-4470-b9a9-85f3c03a7cd2)
 
-ffuf offers many options for fuzzing.
+3)ffuf offers many options for fuzzing.
 
 To specify the position to be fuzzed, use the word "FUZZ" in the ffuf command.
 
@@ -37,7 +39,7 @@ Filtering Options
 -ms: Response size
 -mw: Number of words in the response
 
-Examples:
+4)Examples:
 
 To get responses with status codes 200 and 302, use:
 Command : ffuf -w wordlist.txt -u http://website.com/FUZZ -e .aspx,.html -mc 200,302
